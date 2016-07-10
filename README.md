@@ -13,6 +13,6 @@ If install works - pi will reboot with twonky running
     
     http://pi's_ip_address:9000
   
-  please comment
+  please comment :)
   
 Best, ---Michael
