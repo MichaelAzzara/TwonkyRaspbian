@@ -10,7 +10,7 @@ FileUtils.install 'twonkystartup', '/etc/init.d', :mode => 0755, :verbose => tru
 puts "1. Success"
 
 # 2. Set Twonky to load at boot
-system "update-rc.d /etc/init.d/twonkyinit defaults"
+system "update-rc.d /etc/init.d/twonkystartup defaults"
 puts "2. Success"
 
 # 3. Create user to run twonky
