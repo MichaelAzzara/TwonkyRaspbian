@@ -1,0 +1,25 @@
+<Server>
+	<DeviceId>
+		<DisplayName>QNAP TurboNAS</DisplayName>
+		<DeviceDescriptionRecognition>
+			<!-- Note: The DD is essentially the same as Windows Media Connect.
+				 Hence, we need here a longer match on the modelDescription to
+				 correctly identify it as QNAP TurboNAS. -->
+			<DescriptionText>&lt;modelDescription&gt;QNAPDLNA on TurboNAS</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<HttpRecognition>
+			<!-- QNAPDLNA is not enough as we would detect it as Windows Media
+			     Player as provided in the user-agent. Hence use a longer
+				 match here. -->
+			<HttpText>DLNADOC/1.50 UPnP/1.0 QNAPDLNA/1.0</HttpText>
+		</HttpRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<HTTP>
+			<!-- Device refuses connections with user-agent "Twonky".
+				 Hence, use a modified old user-agent of Twonky 6. -->
+			<PretendUserAgent>pvConnect/6.0 DLNADOC/1.50</PretendUserAgent>
+		</HTTP>
+	</Adaptations>
+</Server>

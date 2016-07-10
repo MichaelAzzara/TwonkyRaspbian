@@ -1,0 +1,79 @@
+<div id="initialSetupContainer">
+	<div class="serverSettingsTitlebarWrapper">
+		<div class="subHeader nomargin">
+			<span class="subheaderTitle" string="setup"></span>
+		</div>
+	</div>	
+	<div class="smallServerContentSpacer"></div>
+
+	<!-- enter license key (if not done yet) -->
+	<div class="paddingLeft" key="licensestatus"></div>
+
+	<!-- Server Name -->
+	<div class="boxHeader">
+		<span class="titleWrapper">
+			<span class="title" string="servername" />
+			</span>
+		<div class="clear" />
+	</div>
+	<div id="subheader_ServerName" class="inputCaption">
+		<input id="servername" key="friendlyname" class="longInput" />
+		<div class="smallServerContentSpacer">
+		</div>
+		<div>
+			<div string="servernamecaption" />
+		</div>
+		<div class="serverContentSpacer">
+		</div>
+	</div>
+
+	<!-- Language -->
+	<div id="languageContainer">
+		<div class="boxHeader">
+			<span class="titleWrapper">
+				<span class="title" string="language" />
+			</span>
+			<div class="clear" />
+		</div>
+		<div id="subheader_Language" class="inputCaption">
+			<div>
+				<div string="languagecaption" />
+			</div>
+			<div class="smallServerContentSpacer">
+			</div>
+			<div id="languageSelectBox">
+			</div>
+			<div class="serverContentSpacer">
+			</div>
+		</div>
+	</div>
+	
+	<!-- Shared Folders -->
+	<div class="boxHeader">
+		<span class="titleWrapper">
+			<span class="title" string="sharedfolders" />
+		</span>
+		<div class="clear" />
+	</div>
+	<div id="subheader_SharedFolders" class="paddingLeft" >
+		<div>
+			<span string="sharedfolderscaption" />
+		</div>
+		<div class="smallServerContentSpacer">
+		</div>
+		<div id="share_folders_container" key="contentdir" />
+		<a class="actionbtn" onclick="createNewSharedFolderRow()" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)"><span class="actionbtn_l"></span><span class="actionbtn_c" string="addnewfolder"></span><span class="actionbtn_r"></span></a>
+		<div class="serverContentSpacer">
+		</div>
+	</div>
+	<div id="divSelectDir" style="visibility:hidden" ></div>
+	
+	<div class="smallServerContentSpacer">
+	</div>
+	<div id="actionButtonContainer">
+		<a id="saveButton" class="actionbtnmd bold floatL" onmousedown="onButtonMouseDown(this)" onmouseup="onButtonMouseUp(this)" onclick="submitInitialSetupData()"><span class="actionbtn_l"></span><span class="actionbtn_c" string="confirmchanges"></span><span class="actionbtn_r"></span></a>
+	</div>
+	<div id="spinnerContainer" style="display: none;">
+		<div class="spinner"></div>
+	</div>
+</div>

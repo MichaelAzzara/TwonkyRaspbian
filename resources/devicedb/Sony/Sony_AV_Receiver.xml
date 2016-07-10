@@ -1,0 +1,28 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Sony AV Receiver</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>Sony Corporation</DescriptionText>
+			<DescriptionText>IPSTR2</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Capabilities>
+		<Scaling>
+			<Target>JPEG1920x1080</Target>
+			<Target>JPEG160x160</Target>
+		</Scaling>
+	</Capabilities>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+    <DeviceQuirks>
+        <Quirk>POLL_AVT_STATE</Quirk>
+        <Quirk>BROKEN_SETNEXT</Quirk>
+        <Quirk>SUPPRESS_STATE_EVENTS</Quirk>
+        <Quirk>NEED_NO_PLAY_4_SETAVT</Quirk>
+        <Quirk>FORCE_4TH_FIELD</Quirk>
+    </DeviceQuirks>
+</Client>

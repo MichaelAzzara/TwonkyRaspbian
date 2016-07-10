@@ -1,0 +1,6 @@
+#iTunes library import plugin
+#Copyright (C) 2004-2006 TwonkyVision GmbH
+#Copyright (C) 2007-2014 PacketVideo Corporation
+#Copyright (C) 2015-2016 LYNX TECHNOLOGY
+launch on change:$ituneslib
+exec: itunes-import -dbdir $dbdir -playlist-dir $dbdir -itunes-lib !ituneslib -base $contentbase
