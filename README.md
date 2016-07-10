@@ -1,9 +1,13 @@
 # TwonkyRaspbian
 Twonky 8.2.1 for Raspbian Jessie
 
-    Work in progress
+
+Objective: Quick install of twonkyserver on raspbian.
+
+
+    [Work in progress]
   
--- quick install
+Quick install instructions:
 
 1. Clone into /usr/share
 2. $sudo apt-get install ruby # >> to use INSTALL.rb
