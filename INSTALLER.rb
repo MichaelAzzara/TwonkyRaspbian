@@ -13,12 +13,13 @@ puts "1. Success"
 system "update-rc.d /etc/init.d/twonkyinit defaults"
 puts "2. Success"
 
-# 3. Make Twonky files Execuable
-system "chmod 700 twonkys* cgi-bin/* plugins/*"
+# 3. Create user to run twonky
+system "adduser --system --disabled-password --ingroup pi --disabled-login twonky"
 puts "3. Success"
 
-# 4. Create user to run twonkys
-system "adduser --system --disabled-password --ingroup pi --disabled-login twonky"
+# 4. Make Twonky files Execuable and change folder permissions
+system "chmod 700 twonkys* cgi-bin/* plugins/*"
+system "chown twonky:pi /usr/share/TwonkyRaspbian -R"
 puts "4. Success"
 
 # 5. Create appdata folder to host databases ect.
