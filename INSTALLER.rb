@@ -17,7 +17,7 @@ FileUtils.install init, '/etc/init.d/', :mode => 0755, :verbose => true
 puts "1. Success"
 
 # 2. Set Twonky to load at boot
-system "update-rc.d /etc/init.d/#{init} defaults"
+system "update-rc.d #{init} defaults"
 puts "2. Success"
 
 # 3. Create user to run twonky
