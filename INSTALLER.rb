@@ -13,7 +13,7 @@ twonky_dir = "/home/twonky"
 puts "Prepairing Twonky install"
 #
 # 1. Move Twonky Starter into the /etc/init.d dir and make it executable
-FileUtils.install '#{init}', '/etc/init.d', :mode => 0755, :verbose => true
+FileUtils.install init, '/etc/init.d/', :mode => 0755, :verbose => true
 puts "1. Success"
 
 # 2. Set Twonky to load at boot
